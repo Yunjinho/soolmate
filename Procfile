@@ -1,0 +1,1 @@
+web: gunicorn soolmate.wsgi --log-file -
