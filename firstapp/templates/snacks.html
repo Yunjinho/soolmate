@@ -34,6 +34,9 @@ $('#exampleModal').on('show.bs.modal', function (event) {
         .text-center{
             color:black;
         }
+        .account{
+          min-width:150px;
+        }
     </style>
 </head>
 
@@ -56,12 +59,12 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 								<!-- 로그인 -->
 
 					
-								<li class="account">
+								<li class="account w-auto">
 									<a href='{%url "login"%}'>
 										로그인
-										<i class="fa fa-angle-down"></i>
+										<i class="fa fa-angle-down w-auto"></i>
 									</a>
-									<ul class="account_selection">
+									<ul class="account_selection w-auto">
 										<li><a href='{%url "login"%}'><i class="fa fa-sign-in" aria-hidden="true"></i>로그인</a></li>
 										<li><a href='{%url "register"%}'><i class="fa fa-sign-in" aria-hidden="true"></i>회원 가입</a></li>
 										<li><a href='{%url "logout"%}'><i class="fa fa-sign-in" aria-hidden="true"></i>로그 아웃</a></li>
