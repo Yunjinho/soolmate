@@ -1,6 +1,7 @@
 from django.shortcuts import render
 import json
 import requests
+
 # Create your views here.
 def index(request):
     r = requests.get("https://api2.sktelecom.com/weather/summary?version=1&lat=37.56667&lon=126.97806&appkey=a6101311-8fdc-403e-85c5-73d6f44b06eb")
@@ -22,3 +23,6 @@ def index(request):
         ment='눈에는 눈 멘트 모르겠다 칵테일'
 
     return render(request, 'index.html', {'cSky': cSky, 'cPlace':cPlace, 'cTime':cTime, 'cMax':cMax, 'cMin':cMin,'ment':ment })
+
+def snacks(request):
+    return render(request, 'snacks.html')
