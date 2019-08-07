@@ -25,4 +25,5 @@ urlpatterns = [
     path('',firstapp.views.index,name="index"),
     path('accounts/',include('accounts.urls')),
     path('snacks/',firstapp.views.snacks, name="snacks"),
+    path('area/',firstapp.views.area, name="area"),
 ]
