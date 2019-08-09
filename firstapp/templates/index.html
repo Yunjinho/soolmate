@@ -85,7 +85,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<div class="top_nav_left">{{ment}}</div>
+						<!--<div class="top_nav_left">{{ment}}</div>-->
 					</div>
 					<div class="col-md-6 text-right">
 						<div class="top_nav_right">
@@ -156,10 +156,9 @@
 						<li><a href='{%url "logout"%}'>로그 아웃</a></li>
 					</ul>
 				</li>
-				<li class="menu_item"><a href='{%url "area"%}'>우리 동네 술집찾기</a></li>
-				<li class="menu_item"><a href='{%url "recipe"%}'>레시피</a></li>
 				<li class="menu_item"><a href="{% url 'snacks' %}">추천 안주</a></li>
-
+				<li class="menu_item"><a href='{%url "recipe"%}'>레시피</a></li>
+				<li class="menu_item"><a href='{%url "area"%}'>우리 동네 술집찾기</a></li>
 			</ul>
 		</div>
 	</div>
