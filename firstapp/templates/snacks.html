@@ -13,6 +13,7 @@
 <link rel="stylesheet" type="text/css" href='{%static "plugins/OwlCarousel2-2.2.1/animate.css"%}'>
 <link rel="stylesheet" type="text/css" href='{%static "styles/main_styles.css"%}'>
 <link rel="stylesheet" type="text/css" href='{%static "styles/responsive.css" %}'>
+<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean" rel="stylesheet">
 <script>
 $('#exampleModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
@@ -40,8 +41,13 @@ $('#exampleModal').on('show.bs.modal', function (event) {
         .col-lg-12, .navbar{
           height:75px;
         }
-        .maintext{
+        .maintext, .copyright{
           margin-right:8rem;
+          color:white;
+          font-family: 'Black Han Sans', sans-serif;
+        }
+        body{
+        background: url({% static "images/background.gif" %});
         }
     </style>
 </head>
