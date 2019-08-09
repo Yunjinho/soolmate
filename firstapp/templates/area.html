@@ -68,7 +68,7 @@
         Menu
         <i class="fas fa-bars"></i>
       </button>
-  <!-- Header -->
+      	<!-- Header -->
 	<header class="header trans_300">
 
       <!-- Top Navigation -->
@@ -83,17 +83,17 @@
                 <ul class="top_nav_menu">
   
                   <!-- 로그인 -->
-                  <li class="account w-auto">
-                    <a href='{%url "login"%}'>
-                      로그인
-                      <i class="fa fa-angle-down w-auto"></i>
-                    </a>
-                    <ul class="account_selection w-auto">
-                      <li><a href='{%url "login"%}'><i class="fa fa-sign-in" aria-hidden="true"></i>로그인</a></li>
-                      <li><a href='{%url "register"%}'><i class="fa fa-sign-in" aria-hidden="true"></i>회원 가입</a></li>
-                      <li><a href='{%url "logout"%}'><i class="fa fa-sign-in" aria-hidden="true"></i>로그 아웃</a></li>
-                    </ul>
-                  </li>
+                  <li class="account">
+                      <a href='{%url "login"%}'>
+                        로그인
+                        <i class="fa fa-angle-down"></i>
+                      </a>
+                      <ul class="account_selection">
+                        <li><a href='{%url "login"%}'>로그인</a></li>
+                        <li><a href='{%url "register"%}'></i>회원 가입</a></li>
+                        <li><a href='{%url "logout"%}'></i>로그 아웃</a></li>
+                      </ul>
+                    </li>
                 </ul>
               </div>
             </div>
@@ -102,6 +102,7 @@
       </div>
   
       <!-- Main Navigation -->
+  
       <div class="main_nav_container">
         <div class="container">
           <div class="row">
@@ -124,6 +125,7 @@
           </div>
         </div>
       </div>
+      
   
     </header>
   
