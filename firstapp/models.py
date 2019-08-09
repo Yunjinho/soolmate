@@ -6,10 +6,49 @@ class firstapp(models.Model):
     pub_date = models.DateTimeField('date published')
     body = models.TextField()
 
-class Beer_snacks(models.Model):
+class Beer_snack(models.Model):
     title = models.CharField(max_length=255)
     image = models.ImageField(upload_to='images/')
     description = models.CharField(max_length=500)
     
     def __str__(self):
         return self.title    
+class Cocktail_snack(models.Model):
+    title = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='images/')
+    description = models.CharField(max_length=500)
+    
+    def __str__(self):
+        return self.title
+
+class RiceWine_snack(models.Model):
+    title = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='images/')
+    description = models.CharField(max_length=500)
+    
+    def __str__(self):
+        return self.title
+
+class whiskey_snack(models.Model):
+    title = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='images/')
+    description = models.CharField(max_length=500)
+    
+    def __str__(self):
+        return self.title    
+
+class Soju_snack(models.Model):
+    title = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='images/')
+    description = models.CharField(max_length=500)
+    
+    def __str__(self):
+        return self.title
+
+class Wine_snack(models.Model):
+    title = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='images/')
+    description = models.CharField(max_length=500)
+    
+    def __str__(self):
+        return self.title
