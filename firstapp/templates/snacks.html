@@ -499,7 +499,44 @@ $('#exampleModal').on('show.bs.modal', function (event) {
         </button>
       </div>
       <div class="modal-body">
-        ...
+        <div id="sojumenu" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+              <ol class="carousel-indicators">
+                <li data-target="#sojumenu" data-slide-to="0" class="active"></li>
+                <li data-target="#sojumenu" data-slide-to="1"></li>
+                <li data-target="#sojumenu" data-slide-to="2"></li>
+                <li data-target="#sojumenu" data-slide-to="3"></li>
+              </ol>
+            <div class="carousel-item active" data-interval="2000">
+                <center>
+              <img src="{% static 'images/cleg.jpg' %}"  height="300px" class="d-block w-50" alt="1">
+                </center>
+            </div>
+            <div class="carousel-item" data-interval="2000">
+              <center>
+              <img src="{% static 'images/samgeopsal.jpg' %}"  height="300px" class="d-block w-50" alt="1">
+                </center>
+            </div>
+            <div class="carousel-item" data-interval="2000">
+              <center>
+              <img src="{% static 'images/odeng.jpg' %}"  height="300px" class="d-block w-50" alt="1">
+                </center>
+            </div>
+            <div class="carousel-item" data-interval="2000">
+              <center>
+              <img src="{% static 'images/kimchi.jpg' %}"  height="300px" class="d-block w-50" alt="1">
+                </center>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#sojumenu" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon-primary" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#sojumenu" role="button" data-slide="next">
+            <span class="carousel-control-next-icon-primary" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
       <div class="modal-footer">
         
@@ -530,8 +567,47 @@ $('#exampleModal').on('show.bs.modal', function (event) {
         </button>
       </div>
       <div class="modal-body">
-        ...
+        <div id="winemenu" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+              <ol class="carousel-indicators">
+                <li data-target="#winemenu" data-slide-to="0" class="active"></li>
+                <li data-target="#winemenu" data-slide-to="1"></li>
+                <li data-target="#winemenu" data-slide-to="2"></li>
+                <li data-target="#winemenu" data-slide-to="3"></li>
+              </ol>
+           
+            <div class="carousel-item active" data-interval="2000">
+                <center>
+              <img src="{% static 'images/winecheese.jpg' %}"  height="300px" class="d-block w-50" alt="1">
+                </center>
+            </div>
+            <div class="carousel-item" data-interval="2000">
+              <center>
+              <img src="{% static 'images/canafe.jpg' %}"  height="300px" class="d-block w-50" alt="1">
+                </center>
+            </div>
+            <div class="carousel-item" data-interval="2000">
+              <center>
+              <img src="{% static 'images/brusk.jpg' %}"  height="300px" class="d-block w-50" alt="1">
+                </center>
+            </div>
+            <div class="carousel-item" data-interval="2000">
+              <center>
+              <img src="{% static 'images/caprese.jpg' %}"  height="300px" class="d-block w-50" alt="1">
+                </center>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#winemenu" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon-primary" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#winemenu" role="button" data-slide="next">
+            <span class="carousel-control-next-icon-primary" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
+      
       <div class="modal-footer">
         
         <button type="button" class="btn btn-primary" data-dismiss="modal">확인</button>
