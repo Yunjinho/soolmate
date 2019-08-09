@@ -1,4 +1,5 @@
 {%load staticfiles%}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,9 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Colo Shop Template">
+<meta name="author" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 <link rel="stylesheet" type="text/css" href='{%static "styles/bootstrap4/bootstrap.min.css"%}'>
 <link href='{%static "plugins/font-awesome-4.7.0/css/font-awesome.min.css"%}' rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href='{%static "plugins/OwlCarousel2-2.2.1/owl.carousel.css" %}'>
@@ -22,7 +25,46 @@
           height:75px;
         }
         
+</style>
+
+  <!-- Bootstrap core CSS -->
+  <link href='{% static "vendor/bootstrap/css/bootstrap.min.css" %}' rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Colo Shop Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href='{%static "styles/bootstrap4/bootstrap.min.css"%}'>
+  <link href='{%static "plugins/font-awesome-4.7.0/css/font-awesome.min.css"%}' rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href='{%static "plugins/OwlCarousel2-2.2.1/owl.carousel.css" %}'>
+  <link rel="stylesheet" type="text/css" href='{%static "plugins/OwlCarousel2-2.2.1/owl.theme.default.css"%}'>
+  <link rel="stylesheet" type="text/css" href='{%static "plugins/OwlCarousel2-2.2.1/animate.css"%}'>
+  <link rel="stylesheet" type="text/css" href='{%static "styles/main_styles.css"%}'>
+  <link rel="stylesheet" type="text/css" href='{%static "styles/responsive.css" %}'>
+  <!-- Custom fonts for this template -->
+  <link href='{% static "vendor/fontawesome-free/css/all.min.css" %}' rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href='{% static "vendor/simple-line-icons/css/simple-line-icons.css" %}' rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href='{% static "css/aggitency.min.css" %}' rel="stylesheet">
+  <style>
+  .account{
+          min-width:150px;
+        }
+  .col-lg-12, .navbar{
+          height:75px;
+        }
+  .maintext{
+          margin-right:8rem;
+        }
   </style>
+
 </head>
 
 <body>
@@ -163,6 +205,140 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- Team -->
+	<section class="bg-light page-section" id="team">
+		<div class="container">
+		  <div class="row">
+			<div class="col-lg-12 text-center">
+			  <h2 class="section-heading text-uppercase">Team Soolmate</h2>
+			  <h3 class="section-subheading text-muted">LIKE LION 7th @ Gachon University</h3>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-sm-4">
+			  <div class="team-member">
+				<img class="mx-auto rounded-circle" src='{% static "images/jihyun.jpg" %}' width="300" height="300"alt="">
+				<h4>김지현</h4>
+				<p class="text-muted">Software</p>
+				<ul class="list-inline social-buttons">
+				  <li class="list-inline-item">
+					<a href="#">
+					  <i class="fab fa-instagram"></i>
+					</a>
+				  </li>
+				  <li class="list-inline-item">
+					<a href="https://github.com/zizi29028">
+					  <i class="fab fa-github"></i>
+					</a>
+				  </li>
+				  <li class="list-inline-item">
+					<a href="#">
+					  <i class="fab fa-linkedin-in"></i>
+					</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+			<div class="col-sm-4">
+			  <div class="team-member">
+				<img class="mx-auto rounded-circle" src='{% static "images/jaemok.jpg" %}' width="300" height="300"alt="">
+				<h4>김재목</h4>
+				<p class="text-muted">Media Communication</p>
+				<ul class="list-inline social-buttons">
+				  <li class="list-inline-item">
+					<a href="#">
+					  <i class="fab fa-instagram"></i>
+					</a>
+				  </li>
+				  <li class="list-inline-item">
+					<a href="https://github.com/JaeMokKim">
+					  <i class="fab fa-github"></i>
+					</a>
+				  </li>
+				  <li class="list-inline-item">
+					<a href="#">
+					  <i class="fab fa-linkedin-in"></i>
+					</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+			<div class="col-sm-4">
+			  <div class="team-member">
+				<img class="mx-auto rounded-circle" src='{% static "images/jinho.jpg" %}' width="300" height="300"alt="">
+				<h4>윤진호</h4>
+				<p class="text-muted">Global Economics</p>
+				<ul class="list-inline social-buttons">
+				  <li class="list-inline-item">
+					<a href="#">
+					  <i class="fab fa-instagram"></i>
+					</a>
+				  </li>
+				  <li class="list-inline-item">
+					<a href="https://github.com/Yunjinho">
+					  <i class="fab fa-github"></i>
+					</a>
+				  </li>
+				  <li class="list-inline-item">
+					<a href="#">
+					  <i class="fab fa-linkedin-in"></i>
+					</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+			<div class="col-sm-4">
+			  <div class="team-member">
+				<img class="mx-auto rounded-circle" src='{% static "images/daeun.jpg" %}' width="300" height="300"alt="">
+				<h4>이다은</h4>
+				<p class="text-muted">Computer Science</p>
+				<ul class="list-inline social-buttons">
+				  <li class="list-inline-item">
+					<a href="#">
+					  <i class="fab fa-instagram"></i>
+					</a>
+				  </li>
+				  <li class="list-inline-item">
+					<a href="https://github.com/da-nyee">
+					  <i class="fab fa-github"></i>
+					</a>
+				  </li>
+				  <li class="list-inline-item">
+					<a href="#">
+					  <i class="fab fa-linkedin-in"></i>
+					</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+			<div class="col-sm-4">
+			  <div class="team-member">
+				<img class="mx-auto rounded-circle" src='{% static "images/hyunam.jpg" %}' width="300" height="300"alt="">
+				<h4>현암</h4>
+				<p class="text-muted">Computer Science</p>
+				<ul class="list-inline social-buttons">
+				  <li class="list-inline-item">
+					<a href="#">
+					  <i class="fab fa-instagram"></i>
+					</a>
+				  </li>
+				  <li class="list-inline-item">
+					<a href="https://github.com/HyunAm0225">
+					  <i class="fab fa-github"></i>
+					</a>
+				  </li>
+				  <li class="list-inline-item">
+					<a href="#">
+					  <i class="fab fa-linkedin-in"></i>
+					</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</section>
 
 	<footer class="footer">
 		<div class="container">
