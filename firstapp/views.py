@@ -109,3 +109,4 @@ def pageon(request):
     elif weather[0]["today"]["sky"]["name"]=='눈':
         ment='눈에는 눈 멘트 모르겠다 칵테일'
     return render(request, 'pageon.html', {'cSky': cSky, 'cPlace':cPlace, 'cTime':cTime, 'cMax':cMax, 'cMin':cMin,'ment':ment })
+
