@@ -29,7 +29,7 @@ class RiceWine_snack(models.Model):
     def __str__(self):
         return self.title
 
-class whiskey_snack(models.Model):
+class Whiskey_snack(models.Model):
     title = models.CharField(max_length=255)
     image = models.ImageField(upload_to='images/')
     description = models.CharField(max_length=500)

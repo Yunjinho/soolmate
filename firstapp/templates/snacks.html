@@ -149,22 +149,20 @@ $('#exampleModal').on('show.bs.modal', function (event) {
                 <li data-target="#beermenu" data-slide-to="0" class="active"></li>
                 <li data-target="#beermenu" data-slide-to="1"></li>
                 <li data-target="#beermenu" data-slide-to="2"></li>
+                <li data-target="#beermenu" data-slide-to="3"></li>
               </ol>
             <div class="carousel-item active" data-interval="2000">
                 <center>
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fries_2.jpg/220px-Fries_2.jpg"  height="300px" class="d-block w-50" alt="1">
                 </center>
             </div>
-            <div class="carousel-item" data-interval="2000">
-              <center>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fries_2.jpg/220px-Fries_2.jpg"  height="300px" class="d-block w-50" alt="1">
+            {% for beer_snack in beer_snack.all %}
+              <div class="carousel-item" data-interval="2000">
+                <center>
+                  <img src = "{{beer_snack.image.url}}" height="300px" class="d-block w-50" alt="1">
                 </center>
-            </div>
-            <div class="carousel-item" data-interval="2000">
-              <center>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fries_2.jpg/220px-Fries_2.jpg"  height="300px" class="d-block w-50" alt="1">
-                </center>
-            </div>
+              </div>  
+            {% endfor %}
           </div>
           <a class="carousel-control-prev" href="#beermenu" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon-primary" aria-hidden="true"></span>
