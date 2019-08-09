@@ -111,10 +111,10 @@
               </div>
               <nav class="navbar">
                 <ul class="navbar_menu">
-                  <li><a href="#">home</a></li>
+                  <li><a href="{% url 'index' %}">home</a></li>
                   <li><a href="{% url 'snacks' %}">추천 안주</a></li>
-                  <li><a href="#">레시피</a></li>
-                  <li><a href="#">지역술집찾기</a></li>
+                  <li><a href="{% url 'recipe' %}">레시피</a></li>
+                  <li><a href="{% url 'area' %}">지역술집찾기</a></li>
                 </ul>
                 <div class="hamburger_container">
                   <i class="fa fa-bars" aria-hidden="true"></i>
@@ -160,7 +160,7 @@
     <div class="container">
       <div class="intro-text">
         <div class="intro-lead-in">Welcome To Our Studio!</div>
-        <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+  `-uppercase">It's Nice To Meet You</div>
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
       </div>
     </div>

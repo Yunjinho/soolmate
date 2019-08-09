@@ -79,7 +79,7 @@
 							<ul class="navbar_menu">
 								<li><a href="#">home</a></li>
 								<li><a href="{% url 'snacks' %}">추천 안주</a></li>
-								<li><a href="#">레시피</a></li>
+								<li><a href='{%url "recipe"%}'>레시피</a></li>
 								<li><a href='{%url "area"%}'>지역술집찾기</a></li>
 							</ul>
 							<div class="hamburger_container">
@@ -111,7 +111,7 @@
 					</ul>
 				</li>
 				<li class="menu_item"><a href='{%url "area"%}'>우리 동네 술집찾기</a></li>
-				<li class="menu_item"><a href="#">레시피</a></li>
+				<li class="menu_item"><a href='{%url "recipe"%}'>레시피</a></li>
 				<li class="menu_item"><a href="{% url 'snacks' %}">추천 안주</a></li>
 
 			</ul>
@@ -149,7 +149,7 @@
 				<div class="col-md-4">
 					<div class="banner_item align-items-center" style="background-image:url(static/images/kac.jpeg)">
 						<div class="banner_category">
-							<a href="categories.html">레시피</a>
+							<a href='{%url "recipe"%}'>레시피</a>
 						</div>
 					</div>
 				</div>
