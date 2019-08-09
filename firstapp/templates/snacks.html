@@ -108,7 +108,31 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 			</div>
 		</div>
 
-	</header>
+  </header>
+  
+	<div class="fs_menu_overlay"></div>
+	<div class="hamburger_menu">
+		<div class="hamburger_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+		<div class="hamburger_menu_content text-right">
+			<ul class="menu_top_nav">
+				
+				<li class="menu_item has-children">
+					<a href="#">
+						로그인
+						<i class="fa fa-angle-down"></i>
+					</a>
+					<ul class="menu_selection">
+						<li><a href='{%url "login"%}'>로그인</a></li>
+						<li><a href='{%url "register"%}'>회원가입</a></li>
+						<li><a href='{%url "logout"%}'>로그아웃</a></li>
+					</ul>
+				</li>
+				<li class="menu_item"><a href="{% url 'snacks' %}">추천 안주</a></li>
+				<li class="menu_item"><a href='{%url "recipe"%}'>레시피</a></li>
+				<li class="menu_item"><a href='{%url "area"%}'>우리 동네 술집찾기</a></li>
+			</ul>
+		</div>
+	</div>
 
 
 
@@ -484,3 +508,10 @@ $('#exampleModal').on('show.bs.modal', function (event) {
     </body>
 
 </html>
+<script src='{%static "js/jquery-3.2.1.min.js"%}'></script>
+<script src='{%static "styles/bootstrap4/popper.js"%}'></script>
+<script src='{%static "styles/bootstrap4/bootstrap.min.js"%}'></script>
+<script src='{%static "plugins/Isotope/isotope.pkgd.min.js"%}'></script>
+<script src='{%static "plugins/OwlCarousel2-2.2.1/owl.carousel.js"%}'></script>
+<script src='{%static "plugins/easing/easing.js"%}'></script>
+<script src='{%static "js/custom.js"%}'></script>
