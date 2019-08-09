@@ -28,4 +28,4 @@ urlpatterns = [
     path('area/',firstapp.views.area, name="area"),
     path('recipe/',firstapp.views.recipe, name="recipe"),
     path('area/',firstapp.views.pageon, name="pageon"),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
