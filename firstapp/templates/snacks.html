@@ -37,6 +37,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
         }
         .account{
           min-width:150px;
+          background: white;
         }
         .col-lg-12, .navbar{
           height:75px;
@@ -48,10 +49,12 @@ $('#exampleModal').on('show.bs.modal', function (event) {
           background-color: rgba( 255, 255, 255, 0.7 );
           font-family: 'Black Han Sans', sans-serif;
         }
-        body{
-        background: url({% static "images/background.gif" %});
+        #nav{
+          background: white;
         }
-    </style>
+        body{
+        background: url({% static "images/background.gif" %});}
+      </style>
 </head>
 
     <body>
@@ -60,7 +63,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 
 		<!-- Top Navigation -->
 
-		<div class="top_nav">
+		<div class="top_nav" ID="nav">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
@@ -73,17 +76,60 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 								<!-- 로그인 -->
 
 					
-								<li class="account w-auto">
-									<a href='{%url "login"%}'>
-										계정 정보
-										<i class="fa fa-angle-down w-auto"></i>
+								{% if user.is_authenticated %}
+                <li class="account">
+									<a href="#" class="nav-link"><span data-hover="환영합니다. {{user.username}} 님!"> 환영합니다. {{user.username}} 님!<i class="fa fa-angle-down"></i></span>
 									</a>
-									<ul class="account_selection w-auto">
-										<li><a href='{%url "login"%}'> </i>로그인</a></li>
-										<li><a href='{%url "register"%}'> </i>회원가입</a></li>
-										<li><a href='{%url "logout"%}'> </i>로그아웃</a></li>
+									<ul class="account_selection">
+                    <li class="nav-item">
+                    <a class="nav-link" href="javascript:{document.getElementById('logout').submit()}"><span data-hover="로그아웃">로그아웃</span> </a>
+                    <form id="logout" method="POST" action="{% url 'logout' %}">
+                        {% csrf_token %} <input type="hidden" />
+                    </form>
 									</ul>
+                </li>
+                
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">환영합니다. {{ user.username }} 님!</a>
+                    
+                        
+                </li> -->
+                {% else %}
+                <li class="account">
+                    {% if user.is_authenticated %}
+                    <li class="account">
+                      <a href="#" class="nav-link"><span data-hover="환영합니다. {{user.username}} 님!"> 환영합니다. {{user.username}} 님!<i class="fa fa-angle-down"></i></span>
+                      </a>
+                      <ul class="account_selection">
+                        <li class="nav-item">
+                        <a class="nav-link" href="javascript:{document.getElementById('logout').submit()}"><span data-hover="로그아웃">로그아웃</span> </a>
+                        <form id="logout" method="POST" action="{% url 'logout' %}">
+                            {% csrf_token %} <input type="hidden" />
+                        </form>
+                      </ul>
+                    </li>
+                    
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">환영합니다. {{ user.username }} 님!</a>
+                        
+                            
+                    </li> -->
+                    {% else %}
+                    <li class="account">
+                      <a href='{%url "login"%}'>
+                        계정 정보
+                        <i class="fa fa-angle-down"></i>
+                      </a>
+                      <ul class="account_selection">
+                        <li><a href='{%url "login"%}'>로그인</a></li>
+                        <li><a href='{%url "register"%}'>회원가입</a></li>
+                      </ul>
+                    </li>
+                    {% endif %}
 								</li>
+                {% endif %}
 							</ul>
 						</div>
 					</div>
@@ -132,7 +178,6 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 					<ul class="menu_selection">
 						<li><a href='{%url "login"%}'>로그인</a></li>
 						<li><a href='{%url "register"%}'>회원가입</a></li>
-						<li><a href='{%url "logout"%}'>로그아웃</a></li>
 					</ul>
 				</li>
 				<li class="menu_item"><a href="{% url 'snacks' %}">추천 안주</a></li>
