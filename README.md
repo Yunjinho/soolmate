@@ -14,6 +14,8 @@
 - Cocktail recipes
 - Pub information
 
+<br />
+
 ### Developers
 - https://github.com/da-nyee (Daeun Lee, 이다은)
 - https://github.com/zizi29028 (Jihyeon Kim, 김지현)
