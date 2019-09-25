@@ -1,10 +1,10 @@
 ## Soolmate Project (LIKELION Hackathon)
-> Developed a web service using Django, Python, HTML, CSS
->
-> Cooperated with team members by Git, Github
->
-> Deployed the web service to Github and Heroku
-<br>
+### The Outline
+* Developed a web service using Django, Python, HTML, and CSS.
+
+* Collaborated with team members by Git and Github.
+
+* Deployed the web service to Github and Heroku.
 
 ### Functions
 - Sign up, Log in, Log out
@@ -14,7 +14,6 @@
 
 ### The Result
 - https://gentle-sea-51378.herokuapp.com/
-<br>
 
 ### Developers
 - https://github.com/da-nyee (Daeun Lee, 이다은)
