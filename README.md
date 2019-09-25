@@ -4,6 +4,7 @@
 > Cooperated with team members by Git, Github
 >
 > Deployed the web service to Github and Heroku
+<br>
 
 ### Functions
 - Sign up, Log in, Log out
