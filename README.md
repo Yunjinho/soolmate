@@ -1,4 +1,4 @@
-## Soolmate Project (LIKELION Hackathon)
+## Soolmate (LIKELION Hackathon Project)
 ### The Outline
 * Developed a web service using Django, Python, HTML, and CSS.
 
@@ -14,7 +14,6 @@
 
 ### The Result
 - https://gentle-sea-51378.herokuapp.com/
-<br>
 
 ### Developers
 - https://github.com/da-nyee (Daeun Lee, 이다은)
