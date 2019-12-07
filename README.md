@@ -1,5 +1,8 @@
 ## Soolmate (LIKELION Hackathon Project)
-### The Outline
+### Preview
+![soolmate_main](./img/soolmate.PNG)
+
+### Outline
 * Developed a web service using Django, Python, HTML, and CSS.
 
 * Collaborated with team members by Git and Github.
@@ -12,7 +15,7 @@
 - Cocktail recipes
 - Pub information
 
-### The Result
+### Result
 - https://gentle-sea-51378.herokuapp.com/
 
 ### Developers
