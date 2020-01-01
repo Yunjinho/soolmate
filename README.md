@@ -4,12 +4,10 @@
 
 ### Outline
 * Developed a web service using Django, Python, HTML, and CSS.
-
 * Collaborated with team members by Git and Github.
-
 * Deployed the web service to Github and Heroku.
 
-### Functions
+### Function
 - Sign up, Log in, Log out
 - Snack recommendations
 - Cocktail recipes
@@ -18,7 +16,7 @@
 ### Result
 - https://gentle-sea-51378.herokuapp.com/
 
-### Developers
+### Developer
 - https://github.com/da-nyee (Daeun Lee, 이다은)
 - https://github.com/zizi29028 (Jihyeon Kim, 김지현)
 - https://github.com/JaeMokKim (Jaemok Kim, 김재목)
