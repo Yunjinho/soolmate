@@ -2,16 +2,15 @@
 ### Preview
 ![soolmate_main](./img/soolmate.PNG)
 
-### Outline
-* Developed a web service using Django, Python, HTML, and CSS.
-* Collaborated with team members by Git and Github.
-* Deployed the web service to Github and Heroku.
-
 ### Function
 - Sign up, Log in, Log out
 - Snack recommendations
 - Cocktail recipes
 - Pub information
+
+### Development Environment
+- Django + Python + Bootstrap
+- Git + Github + Heroku
 
 ### Result
 - https://gentle-sea-51378.herokuapp.com/
